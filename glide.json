@@ -6,18 +6,8 @@
     "author": "Artsiom",
     "params": [
       {
-        "name": "in_amount",
-        "displayName": "Amount",
-        "type": "number"
-      },
-      {
-        "name": "in_order",
-        "displayName": "Order ID",
-        "type": "string"
-      },
-      {
-        "name": "in_recip",
-        "displayName": "Recipient",
+        "name": "body_input",
+        "displayName": "Body",
         "type": "string"
       }
     ],
