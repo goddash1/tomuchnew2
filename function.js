@@ -4,11 +4,11 @@ const glideamount = in_amount.value;
 const gliderecip = String(in_recip.value) ?? "";
 const glideorder = String(in_order.value) ?? "";
 
-const secret = '7a395ee6-de9e-4225-a82c-04612683ed65';
+const secret = 'li86qXzVKltU3IOwrGddCtzoB6iVJ2BIHAUOVc6732tTtzOJunmkvxaqqyCci9rkIhzZPkVDp5MR46BH7QEyxt8Kqsz5yejPdiyia9n190m2PimUUJ24blraZYSmB4Ozcl5697f4WwFbkalRtzPJu3ILqF5Z1UngvRtY1MqZynKedgUXQaAcRzfeqGXUDTQEnO1veGTxwnWPa1IqftDeJrppb2KVUb5SYfBlhW5FWrsYGjuBqemvxy78dqzO9suP';
 const data = {
-  currencyID: 4,
+  currencyID: 3,
   amount: glideamount,
-  recipientTypeID: 1,
+  recipientTypeID: 4,
   recipient: `${gliderecip}`,
   clientOrderID: `${glideorder}`,
   webhookURL: 'https://webhook.site/6c2fa6fa-ec9f-47ca-a2c2-18505a6dec9b'
