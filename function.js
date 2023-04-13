@@ -2,7 +2,7 @@ window.function = function (body_input) {
 
 // const glideamount = in_amount.value;
 // const gliderecip = String(in_recip.value) ?? "";
-// const glideorder = String(in_order.value) ?? "";
+const body = String(body_input.value) ?? "";
 
 const secret = 'li86qXzVKltU3IOwrGddCtzoB6iVJ2BIHAUOVc6732tTtzOJunmkvxaqqyCci9rkIhzZPkVDp5MR46BH7QEyxt8Kqsz5yejPdiyia9n190m2PimUUJ24blraZYSmB4Ozcl5697f4WwFbkalRtzPJu3ILqF5Z1UngvRtY1MqZynKedgUXQaAcRzfeqGXUDTQEnO1veGTxwnWPa1IqftDeJrppb2KVUb5SYfBlhW5FWrsYGjuBqemvxy78dqzO9suP';
 // const data = {
@@ -43,8 +43,8 @@ const secret = 'li86qXzVKltU3IOwrGddCtzoB6iVJ2BIHAUOVc6732tTtzOJunmkvxaqqyCci9rk
 //     successRedirectURL: "https://krossberi.glide.page/dl/success"
 //   }
 // }
-// const raw = JSON.stringify(data);
-const hash = CryptoJS.HmacSHA512(body_input, secret).toString();
+const raw = JSON.stringify(body_input);
+const hash = CryptoJS.HmacSHA512(raw, secret).toString();
 
 return hash;
 
