@@ -44,9 +44,9 @@ const secret = 'li86qXzVKltU3IOwrGddCtzoB6iVJ2BIHAUOVc6732tTtzOJunmkvxaqqyCci9rk
 //   }
 // }
 
-  var raw = JSON.stringify(body_input);
-const hash = CryptoJS.HmacSHA512(raw, secret).toString();
+//const raw = JSON.stringify(body_input);
+const hash = CryptoJS.HmacSHA512(body_input, secret).toString();
 
-return raw;
+return body_input;
 
 }
