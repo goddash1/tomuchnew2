@@ -45,8 +45,8 @@ const secret = 'li86qXzVKltU3IOwrGddCtzoB6iVJ2BIHAUOVc6732tTtzOJunmkvxaqqyCci9rk
 // }
 
 //const raw = JSON.stringify(body_input);
-const hash = CryptoJS.HmacSHA512(body_input, secret).toString();
+const hash = CryptoJS.HmacSHA512(body, secret).toString();
 
-return body_input;
+return body;
 
 }
