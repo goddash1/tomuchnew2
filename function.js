@@ -43,9 +43,10 @@ const secret = 'li86qXzVKltU3IOwrGddCtzoB6iVJ2BIHAUOVc6732tTtzOJunmkvxaqqyCci9rk
 //     successRedirectURL: "https://krossberi.glide.page/dl/success"
 //   }
 // }
-const raw = JSON.stringify(body_input);
+
+  var raw = JSON.stringify(body_input);
 const hash = CryptoJS.HmacSHA512(raw, secret).toString();
 
-return hash;
+return raw;
 
 }
