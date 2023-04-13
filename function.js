@@ -16,6 +16,6 @@ const data = {
 const raw = JSON.stringify(data);
 const hash = CryptoJS.HmacSHA512(raw, secret).toString();
 
-return (`${glideamount}`+'gliderecip'+'glideorder');
+return (`${glideamount}`+gliderecip+glideorder);
 
 }
