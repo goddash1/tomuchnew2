@@ -8,14 +8,14 @@ const secret = 'li86qXzVKltU3IOwrGddCtzoB6iVJ2BIHAUOVc6732tTtzOJunmkvxaqqyCci9rk
 const data = {
   currencyID: 3,
   amount: glideamount,
-  recipientTypeID: 4,
-  recipient: `${gliderecip}`,
-  clientOrderID: `${glideorder}`,
+  recipientTypeID: 1,
+  recipient: `${glideorder}`,
+  clientOrderID: `${gliderecip}`,
   webhookURL: 'https://webhook.site/6c2fa6fa-ec9f-47ca-a2c2-18505a6dec9b'
 };
 const raw = JSON.stringify(data);
 const hash = CryptoJS.HmacSHA512(raw, secret).toString();
 
-return (`${glideamount}`+gliderecip+glideorder);
+return hash;
 
 }
